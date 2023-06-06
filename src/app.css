@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+
+/* @font-face {
+    font-family: "Poppins";
+    src: url("../static/fonts/Poppins-Regular.ttf") format('ttf');
+} */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+        url('fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins//Poppins-Bold.woff2') format('woff2'),
+        url('fonts/Poppins/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'EditorialNew';
+    src: url('fonts/EditorialNew/EditorialNew-regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    scroll-behavior: smooth;
+}
