@@ -1,5 +1,6 @@
 <script>
     import GradientBall from "../components/GradientBall.svelte";
+    import Gallery from "../components/Gallery.svelte"
 
     let example_gallery = [
         '7.png',
@@ -15,7 +16,7 @@
         '267.png',
         '268.png',
         '269.png',
-        '270.png',
+       '270.png',
         '271.png',
         '272.png',
     ]
@@ -71,7 +72,7 @@
         <img src="example_nfts/258.png" alt="">
     </div>
 
-    <div class="mx-6 max-w-xl">
+    <div class="mx-6 max-w-xl flex flex-col items-center">
         <div class="text-4xl pb-4">Our Inspiration: México</div>
         <div class="flex flex-col gap-4">
             <div>
@@ -82,9 +83,9 @@
         <img class="py-10" src="example_nfts/Group 3142.png" alt="">
     </div>
 
-    <div class="flex justify-center items-end text-white bg-mblue py-36 w-full">
-        <div class="flex flex-row max-w-3xl">
-            <div class="flex flex-col w-1/2">
+    <div class="flex justify-center items-end text-white bg-mblue py-48 w-full" style="background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(239, 240, 255, 0.07) 1%, rgba(199, 202, 255, 0.26) 5%, rgba(163, 166, 255, 0.44) 9%, rgba(131, 136, 255, 0.59) 13%, rgba(104, 111, 255, 0.72) 17%, rgba(83, 90, 255, 0.82) 21%, rgba(66, 74, 255, 0.9) 26%, rgba(54, 63, 255, 0.96) 32%, rgba(48, 56, 255, 0.99) 39%, #2E37FF 50%, rgba(48, 56, 255, 0.99) 61%, rgba(54, 63, 255, 0.96) 68%, rgba(66, 74, 255, 0.9) 74%, rgba(83, 90, 255, 0.82) 79%, rgba(104, 111, 255, 0.72) 83%, rgba(131, 136, 255, 0.59) 87%, rgba(163, 166, 255, 0.44) 91%, rgba(199, 202, 255, 0.26) 95%, rgba(239, 240, 255, 0.07) 99%, rgba(255, 255, 255, 0) 100%);">
+        <div class="flex flex-col md:flex-row max-w-3xl px-2 items-center">
+            <div class="flex flex-col md:w-1/2">
                 <div class="text-4xl pb-4">Improving Mexican's Emotional Health: Atentamente</div>
                 <div class="flex flex-col gap-4">
                     <div>
@@ -99,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="w-1/2">
+            <div class="w-2/3 md:w-1/2">
                 <img src="images/atentamente/6349afdbab32351af8d16ce6_Hero-Image.png" alt="">
             </div>
 
@@ -107,8 +108,8 @@
     </div>
 
     <div class="flex justify-center items-end">
-        <div class="flex flex-row max-w-3xl">
-            <div class="flex flex-col w-2/3">
+        <div class="flex flex-col md:flex-row max-w-3xl px-2 justify-center">
+            <div class="flex flex-col md:w-2/3">
                 <div class="text-4xl pb-4">Generative Artwork</div>
                 <div class="flex flex-col gap-4">
                     <div>
@@ -120,7 +121,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="flex justify-center">
                 <img src="example_nfts/258.png" alt="">
             </div>
 
@@ -133,12 +134,12 @@
         {/each}
     </div> -->
 
-    <div class="">
+    <div class="m-20">
         <img src="example_nfts/110.png" alt="">
     </div>
 
-    <div class="flex mx-6 max-w-3xl justify-center items-end">
-        <div class="flex flex-col w-1/3">
+    <div class="flex mx-6 max-w-3xl justify-center items-center gap-10">
+        <div class="flex flex-col w-2/3">
             <div class="text-4xl">The Attributes</div>
             <div>
                 <div>
@@ -147,7 +148,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-3 gap-2 w-2/3">
+        <div class="grid grid-cols-3 gap-2 w-1/2">
             {#each example_attributes as attribute}
                 <img src="images/atributos/{attribute}" alt="">
             {/each}
@@ -156,14 +157,15 @@
 
 
     <div id="gallery" class="mx-6 max-w-2xl">
-        <div class="text-4xl text-center">Gallery</div>
+        <div class="text-4xl text-center py-10">Gallery</div>
  
 
-        <div class="grid grid-cols-4 justify-items-center items-center gap-2 max-w-2xl">
+        <Gallery example_gallery={example_gallery}/>
+        <!-- <div class="grid grid-cols-4 justify-items-center items-center gap-2 max-w-2xl">
             {#each example_gallery as nft}
                 <img src="example_gallery/{nft}" alt="">
             {/each}
-        </div>
+        </div> -->
     </div>
     
 </div>
