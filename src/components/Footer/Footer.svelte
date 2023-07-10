@@ -3,21 +3,26 @@
 </div> -->
 
 <div class="relative overflow-hidden flex flex-col justify-end items-center text-white h-96">
-    <div class="flex flex-row gap-10">
+    <div class="flex flex-row gap-10 justify-between pb-6 w-full max-w-6xl">
         <div>
             <div>MOSAICO 2023</div>
         </div>
         <div>
             <div>FOLLOW OUR SOCIALS:</div>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            <div class="flex flex-row justify-center items-center gap-10">
+                <a href="/" class="bg-white rounded-lg p-1">
+                    <img src="icons/instagram2.png" alt="">
+                </a>
+                <a href="/" class="bg-white rounded-lg p-1">
+                    <img src="icons/twitter2.png" alt="">
+                </a>
+                <!-- <img src="icons/twitter2.png" alt=""> -->
+                <!-- <img src="" alt=""> -->
             </div>
         </div>
         <div>
             <div>MADE BY THE BOMBA COLLECTIVE</div>
-            <div>CONTACT US</div>
+            <a href="/">CONTACT US</a>
         </div>
     </div>
     <div id="circle" class="-z-10 absolute top-1/2 w-[200%] h-full bg-gradient-radial from-mblue to-transparent"></div>
